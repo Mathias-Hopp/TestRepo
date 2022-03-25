@@ -16,6 +16,16 @@ updates:
       prefix: chore
       include: scope
 
+  - package-ecosystem: nuget
+    directory: "/backend/src/TestRepo.Backend.ClassLibrary"
+    schedule:
+      interval: daily
+      time: "08:00"
+    open-pull-requests-limit: 2
+    commit-message:
+      prefix: chore
+      include: scope
+
   - package-ecosystem: npm
     directory: "/frontend"
     schedule:
