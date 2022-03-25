@@ -1,6 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: nuget
+    directory: "/backend/src/TestRepo.Backend.WebProject"
     schedule:
       interval: daily
       time: "08:00"
@@ -10,6 +11,7 @@ updates:
       include: scope
 
   - package-ecosystem: npm
+    directory: "/frontend"
     schedule:
       interval: daily
       time: "08:00"
